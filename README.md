@@ -31,3 +31,6 @@ do_token = "AUTH_TOKEN"
 ```
 sudo systemctl restart do-ddns
 ```
+
+## License
+This repository uses the Apache License.
