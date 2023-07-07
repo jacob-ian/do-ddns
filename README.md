@@ -33,4 +33,4 @@ sudo systemctl restart do-ddns
 ```
 
 ## License
-This repository uses the Apache License.
+This repository uses the Apache License 2.0.
