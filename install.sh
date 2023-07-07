@@ -37,4 +37,3 @@ ExecReload=/bin/kill -HUP \$MAINPID
 [Install]
 WantedBy=multi-user.target" > /etc/systemd/system/do-ddns.service
 systemctl enable do-ddns
-systemctl start do-ddns

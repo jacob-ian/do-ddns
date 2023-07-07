@@ -27,9 +27,9 @@ record_name = "home"
 # Get auth token from https://cloud.digitalocean.com/account/api/tokens
 do_token = "AUTH_TOKEN"
 ```
-4. Restart the ddns service
+4. Start the ddns service
 ```
-sudo systemctl restart do-ddns
+sudo systemctl start do-ddns
 ```
 
 ## License
