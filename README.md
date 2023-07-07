@@ -12,12 +12,20 @@ sudo ./install.sh
 ```
 3. Set configuration in `/etc/do-ddns/config.toml`
 ```toml
+# Create the schedule on which to update the DNS record
 # sec   min   hour   day of month   month   day of week   year
 # *     *     *      *              *       *             *
 schedule = "0 1/5 * * * * *"
+
+# The domain managed by DigitalOcean DNS
 domain = "example.com"
-record_name = "home" # home.example.com
-do_token = "AUTH TOKEN FROM DIGITAL OCEAN"
+
+# The A Record to apply dynamic DNS
+# Example: "home" -> home.example.com
+record_name = "home" 
+
+# Get auth token from https://cloud.digitalocean.com/account/api/tokens
+do_token = "AUTH_TOKEN"
 ```
 4. Restart the ddns service
 ```
