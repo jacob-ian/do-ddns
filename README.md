@@ -32,5 +32,12 @@ do_token = "AUTH_TOKEN"
 sudo systemctl start do-ddns
 ```
 
+## Updating Config
+1. Update the config in `/etc/do-ddns/config.toml`
+2. Restart the service
+```
+sudo systemctl restart do-ddns
+```
+
 ## License
 This repository uses the Apache License 2.0.
